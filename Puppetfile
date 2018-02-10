@@ -1,3 +1,6 @@
 mod 'puppet/nginx'
 mod 'puppetlabs/stdlib'
 mod 'puppetlabs/concat'
+mod 'puppetlabs-mysql', '5.2.1'
+mod 'puppetlabs/translate'
+mod 'puppetlabs/staging'
