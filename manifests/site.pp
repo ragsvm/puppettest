@@ -6,6 +6,7 @@ node 'puppet.testdomain.com' {
   file{'/root/testme':
     ensure => file,
     conten => $fqdn,
+    }
 }
 
 node /^web/ {
