@@ -3,6 +3,9 @@ node 'default' {
 
 node 'puppet.testdomain.com' {
   include role::master
+  file{'/root/testme':
+    ensure => file,
+    conten => $fqdn,
 }
 
 node /^web/ {
